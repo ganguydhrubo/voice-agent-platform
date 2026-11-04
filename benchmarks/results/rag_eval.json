@@ -174,7 +174,7 @@
   "language": "bn",
   "question": "ফার্মেসি কোথায়?",
   "confidence": 1.0,
-  "cosine": 0.843,
+  "cosine": 0.846,
   "coverage": 1.0,
   "top1": true,
   "top3": true
@@ -184,7 +184,7 @@
   "language": "bn",
   "question": "আউটডোর কখন খোলা থাকে?",
   "confidence": 1.0,
-  "cosine": 0.899,
+  "cosine": 0.897,
   "coverage": 1.0,
   "top1": true,
   "top3": true
@@ -193,8 +193,8 @@
   "kind": "answerable",
   "language": "bn",
   "question": "অ্যাপয়েন্টমেন্ট কীভাবে নেব?",
-  "confidence": 0.887,
-  "cosine": 0.883,
+  "confidence": 0.889,
+  "cosine": 0.885,
   "coverage": 0.5,
   "top1": true,
   "top3": true
@@ -204,7 +204,7 @@
   "language": "bn",
   "question": "পার্কিং আছে কি?",
   "confidence": 1.0,
-  "cosine": 0.808,
+  "cosine": 0.807,
   "coverage": 1.0,
   "top1": true,
   "top3": true
@@ -214,7 +214,7 @@
   "language": "bn",
   "question": "বিলিং কাউন্টার কোথায়?",
   "confidence": 1.0,
-  "cosine": 0.843,
+  "cosine": 0.838,
   "coverage": 1.0,
   "top1": true,
   "top3": true
@@ -319,24 +319,24 @@
   "kind": "unanswerable",
   "language": "bn",
   "question": "প্যারিসের বিমানের ভাড়া কত?",
-  "confidence": 0.56,
-  "cosine": 0.746,
+  "confidence": 0.558,
+  "cosine": 0.744,
   "coverage": 0.0
  },
  {
   "kind": "unanswerable",
   "language": "bn",
   "question": "জাপানের রাজধানী কী?",
-  "confidence": 0.551,
-  "cosine": 0.735,
+  "confidence": 0.549,
+  "cosine": 0.732,
   "coverage": 0.0
  },
  {
   "kind": "unanswerable",
   "language": "bn",
   "question": "আগামীকাল আবহাওয়া কেমন থাকবে?",
-  "confidence": 0.615,
-  "cosine": 0.819,
+  "confidence": 0.607,
+  "cosine": 0.81,
   "coverage": 0.0
  },
  {

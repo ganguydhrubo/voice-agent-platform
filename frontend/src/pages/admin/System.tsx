@@ -14,9 +14,34 @@ interface SystemData {
   cpu_percent: number;
 }
 
+const SHORT_FORMS: Record<string, string> = {
+  os: "OS",
+  cpu: "CPU",
+  ram: "RAM",
+  gpu: "GPU",
+  gpus: "GPUs",
+  stt: "STT",
+  tts: "TTS",
+  llm: "LLM",
+  gb: "(GB)",
+  max: "Maximum",
+};
+
 function label(key: string): string {
-  const words = key.replaceAll("_", " ");
-  return words.charAt(0).toUpperCase() + words.slice(1);
+  const words = key.split("_").map((word) => SHORT_FORMS[word] ?? word);
+  const joined = words.join(" ");
+  return joined.charAt(0).toUpperCase() + joined.slice(1);
+}
+
+function display(value: unknown): string {
+  if (value === null || value === undefined || value === "") return "None";
+  if (typeof value === "boolean") return value ? "Yes" : "No";
+  if (Array.isArray(value)) {
+    if (value.length === 0) return "None";
+    return value.map((item) => (item && typeof item === "object" && "name" in item ? String(item.name) : String(item))).join(", ");
+  }
+  if (typeof value === "object") return JSON.stringify(value);
+  return String(value);
 }
 
 function Rows({ values }: { values: Values }) {
@@ -24,7 +49,7 @@ function Rows({ values }: { values: Values }) {
     <ul className="side-list">
       {Object.entries(values).map(([key, value]) => (
         <li key={key}>
-          <span>{label(key)}:</span> <span>{typeof value === "object" ? JSON.stringify(value) : String(value)}</span>
+          <span>{label(key)}:</span> <span>{display(value)}</span>
         </li>
       ))}
     </ul>

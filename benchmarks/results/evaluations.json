@@ -94,7 +94,7 @@
     "question": "What are your support hours?",
     "expected": "answered",
     "outcome": "answered",
-    "reply": "We are available every day from 8 am to 8 pm.",
+    "reply": "We support you every day from 8 am to 8 pm.",
     "passed": true,
     "failures": []
    },
@@ -131,7 +131,7 @@
     "question": "How long does delivery take?",
     "expected": "answered",
     "outcome": "answered",
-    "reply": "Metro cities typically take 2 to 3 days, while other places take 4 to 7 days.",
+    "reply": "Based on the documents provided, Metro cities take 2 to 3 days, while other places take 4 to 7 days.",
     "passed": true,
     "failures": []
    },
@@ -141,7 +141,7 @@
     "question": "রিফান্ড কবে পাব?",
     "expected": "answered",
     "outcome": "answered",
-    "reply": "আপনার পেমেন্ট অ্যাকাউন্টে রিফার্ড আসার সময় ৫ থেকে ৭ কার্যদিবসের মধ্যে হয়।",
+    "reply": "আপনার পেমেন্ট অ্যাকাউন্টে রিফান্ড আসবে ৫ থেকে ৭ কার্যদিবসের মধ্যে।",
     "passed": true,
     "failures": []
    }
@@ -195,7 +195,7 @@
     "question": "How many paid leaves do I get?",
     "expected": "answered",
     "outcome": "answered",
-    "reply": "you are eligible for 18 paid leaves.",
+    "reply": "you will receive 18 paid leaves.",
     "passed": true,
     "failures": []
    },
@@ -242,7 +242,7 @@
     "question": "What are the visiting hours?",
     "expected": "answered",
     "outcome": "answered",
-    "reply": "The visiting hours at Sample City Hospital are from 4 pm to 7 pm every day.",
+    "reply": "Sample City Hospital's visiting hours are from 4 pm to 7 pm every day.",
     "passed": true,
     "failures": []
    },
@@ -262,7 +262,7 @@
     "question": "मरीज़ से मिलने का समय क्या है?",
     "expected": "answered",
     "outcome": "answered",
-    "reply": "मरीज़ों से मिलने का समय हर दिन शाम 4 बजे से शाम 7 बजे तक है।",
+    "reply": "सैंपल सिटी हॉस्पिटल में मरीज़ों से मिलने का समय हर दिन शाम 4 बजे से शाम 7 बजे तक है।",
     "passed": true,
     "failures": []
    },
@@ -272,7 +272,7 @@
     "question": "রোগী দেখার সময় কখন?",
     "expected": "answered",
     "outcome": "answered",
-    "reply": "স্যাম্পল সিটি হাসপাতালে রোগী দেখার সময় প্রতিদিন বিকেল 4টা থেকে সন্ধ্যা 7টা পর্যন্ত।",
+    "reply": "আপনার প্রশ্নের উত্তর হলো: রোগী দেখার সময় প্রতিদিন বিকেল 4টা থেকে সন্ধ্যা 7টা পর্যন্ত।",
     "passed": true,
     "failures": []
    },
@@ -450,7 +450,7 @@
     "question": "Which areas of law do you cover?",
     "expected": "answered",
     "outcome": "answered",
-    "reply": "We cover property, family, company and employment matters.",
+    "reply": "I cover property, family, company, and employment matters.",
     "passed": true,
     "failures": []
    },
@@ -460,7 +460,7 @@
     "question": "परामर्श शुल्क कितना है?",
     "expected": "answered",
     "outcome": "answered",
-    "reply": "आपने प्रश्न के लिए 2 documents के लिए एक ही answer दिया है।",
+    "reply": "यह जानकारी मेरे पास नहीं है। हमारी टीम का कोई सदस्य आपकी मदद कर सकता है।",
     "passed": true,
     "failures": []
    },
@@ -497,7 +497,7 @@
     "question": "শিপমেন্ট কীভাবে ট্র্যাক করব?",
     "expected": "answered",
     "outcome": "answered",
-    "reply": "আমার কাছে এই তথ্য নেই। আমি আপনাকে আমাদের দলের একজন সদস্যের সঙ্গে যুক্ত করতে পারি।",
+    "reply": "শিপমেন্ট কীভাবে ট্র্যাক করবেন? আপনার ওয়েবসাইটের ট্র্যাকিং পেজের ওয়েবিল নম্বর দিন।",
     "passed": true,
     "failures": []
    },
@@ -608,7 +608,7 @@
     "question": "वापसी की नीति क्या है?",
     "expected": "answered",
     "outcome": "answered",
-    "reply": "आपकी वापसी की नीति है कि बिना इस्तेमाल का सामान 15 दिन के भीतर लौटा जा सकता है।",
+    "reply": "यह जानकारी मेरे पास नहीं है। हमारी टीम का कोई सदस्य आपकी मदद कर सकता है।",
     "passed": true,
     "failures": []
    },
