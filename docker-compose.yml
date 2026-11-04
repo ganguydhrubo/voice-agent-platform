@@ -1,6 +1,7 @@
 # docker compose up --build              the app and the language model
 # docker compose --profile https up      adds Caddy for HTTPS (set DOMAIN)
-# docker compose --profile monitoring up adds Prometheus and Grafana
+# Monitoring has its own file, because Grafana insists on a password:
+#   GRAFANA_PASSWORD=... docker compose -f docker-compose.yml -f docker-compose.monitoring.yml up -d
 #
 # Download the models first: python scripts/fetch_models.py --profile cpu
 services:
@@ -63,27 +64,6 @@ services:
       - ./infrastructure/caddy/Caddyfile:/etc/caddy/Caddyfile:ro
       - caddy-data:/data
     depends_on: [app]
-    restart: unless-stopped
-
-  prometheus:
-    image: prom/prometheus:v2.54.1
-    profiles: [monitoring]
-    volumes:
-      - ./infrastructure/monitoring/prometheus.yml:/etc/prometheus/prometheus.yml:ro
-    ports:
-      - "127.0.0.1:9090:9090"
-    restart: unless-stopped
-
-  grafana:
-    image: grafana/grafana-oss:11.2.0
-    profiles: [monitoring]
-    environment:
-      GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_PASSWORD:?Set GRAFANA_PASSWORD in your environment}
-    volumes:
-      - ./infrastructure/monitoring/grafana/provisioning:/etc/grafana/provisioning:ro
-      - ./infrastructure/monitoring/grafana/dashboards:/var/lib/grafana/dashboards:ro
-    ports:
-      - "127.0.0.1:3000:3000"
     restart: unless-stopped
 
 volumes:

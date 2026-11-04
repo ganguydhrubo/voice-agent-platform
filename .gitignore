@@ -18,3 +18,4 @@ models/*
 !models/manifests/
 benchmarks/data/
 benchmarks/results/tts_samples/
+benchmarks/results/*.log

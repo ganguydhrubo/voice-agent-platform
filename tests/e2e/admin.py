@@ -60,7 +60,6 @@ def main() -> int:
             for width in WIDTHS:
                 context = browser.new_context(viewport={"width": width, "height": 800}, color_scheme=scheme)
                 page = context.new_page()
-                expected = (404,)
                 page.on("pageerror", lambda error: faults.append(f"page error: {error}"))
                 page.on(
                     "console",
@@ -71,7 +70,7 @@ def main() -> int:
                 page.on(
                     "response",
                     lambda response: faults.append(f"{response.status} {response.url}")
-                    if response.status >= 400 and response.status not in expected
+                    if response.status >= 400 and response.status != 404
                     else None,
                 )
                 for path in PUBLIC:
