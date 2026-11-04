@@ -1,0 +1,344 @@
+{
+  "schema": 1,
+  "note": "Every model the platform can download. Nothing here is a paid service. 'class' follows docs/04_LICENSE_AUDIT.md.",
+  "items": [
+    {
+      "id": "llama-server-win-cpu",
+      "kind": "runtime",
+      "licence": "MIT",
+      "class": "FREE",
+      "platform": "win32",
+      "source": {
+        "type": "zip",
+        "url": "https://github.com/ggml-org/llama.cpp/releases/download/b12098/llama-b12098-bin-win-cpu-x64.zip"
+      },
+      "target": "runtime/llama-server"
+    },
+    {
+      "id": "qwen3.5-0.8b-q4km",
+      "kind": "llm",
+      "licence": "Apache-2.0",
+      "class": "FREE WITH HARDWARE",
+      "min_ram_gb": 1.2,
+      "source": {
+        "type": "hf_file",
+        "repo": "unsloth/Qwen3.5-0.8B-GGUF",
+        "file": "Qwen3.5-0.8B-Q4_K_M.gguf"
+      },
+      "target": "llm"
+    },
+    {
+      "id": "qwen3.5-2b-q4km",
+      "kind": "llm",
+      "licence": "Apache-2.0",
+      "class": "FREE WITH HARDWARE",
+      "min_ram_gb": 2.2,
+      "source": {
+        "type": "hf_file",
+        "repo": "unsloth/Qwen3.5-2B-GGUF",
+        "file": "Qwen3.5-2B-Q4_K_M.gguf"
+      },
+      "target": "llm"
+    },
+    {
+      "id": "whisper-small-ct2",
+      "kind": "stt",
+      "licence": "MIT",
+      "class": "FREE WITH HARDWARE",
+      "source": {
+        "type": "hf_snapshot",
+        "repo": "Systran/faster-whisper-small"
+      },
+      "target": "stt/faster-whisper-small"
+    },
+    {
+      "id": "whisper-base-ct2",
+      "kind": "stt",
+      "licence": "MIT",
+      "class": "FREE WITH HARDWARE",
+      "source": {
+        "type": "hf_snapshot",
+        "repo": "Systran/faster-whisper-base"
+      },
+      "target": "stt/faster-whisper-base"
+    },
+    {
+      "id": "zipformer-bn-streaming",
+      "kind": "stt",
+      "licence": "Apache-2.0 (Vosk-trained model; confirm in archive)",
+      "class": "FREE WITH HARDWARE",
+      "source": {
+        "type": "tar_bz2",
+        "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-streaming-zipformer-bn-vosk-2026-02-09.tar.bz2"
+      },
+      "target": "stt"
+    },
+    {
+      "id": "zipformer-en-streaming",
+      "kind": "stt",
+      "licence": "Apache-2.0",
+      "class": "FREE WITH HARDWARE",
+      "source": {
+        "type": "hf_snapshot",
+        "repo": "csukuangfj/sherpa-onnx-streaming-zipformer-en-20M-2023-02-17",
+        "include": [
+          "*int8*.onnx",
+          "tokens.txt",
+          "decoder*.onnx",
+          "README*"
+        ]
+      },
+      "target": "stt/sherpa-onnx-streaming-zipformer-en-20M-2023-02-17"
+    },
+    {
+      "id": "kokoro-int8-multi-lang",
+      "kind": "tts",
+      "licence": "Apache-2.0",
+      "class": "FREE WITH HARDWARE",
+      "source": {
+        "type": "hf_snapshot",
+        "repo": "csukuangfj/kokoro-int8-multi-lang-v1_0"
+      },
+      "target": "tts/kokoro-int8-multi-lang-v1_0"
+    },
+    {
+      "id": "piper-bn-google",
+      "kind": "tts",
+      "licence": "Voice data CC BY-SA 4.0 (OpenSLR 37) + CMU licence",
+      "class": "RESTRICTED",
+      "source": {
+        "type": "hf_files",
+        "repo": "rhasspy/piper-voices",
+        "files": [
+          "bn/bn_BD/google/medium/bn_BD-google-medium.onnx",
+          "bn/bn_BD/google/medium/bn_BD-google-medium.onnx.json",
+          "bn/bn_BD/google/medium/MODEL_CARD"
+        ]
+      },
+      "target": "tts/piper"
+    },
+    {
+      "id": "piper-hi-rohan",
+      "kind": "tts",
+      "licence": "Voice data under IndicTTS licence; check before commercial use",
+      "class": "RESTRICTED",
+      "source": {
+        "type": "hf_files",
+        "repo": "rhasspy/piper-voices",
+        "files": [
+          "hi/hi_IN/rohan/medium/hi_IN-rohan-medium.onnx",
+          "hi/hi_IN/rohan/medium/hi_IN-rohan-medium.onnx.json",
+          "hi/hi_IN/rohan/medium/MODEL_CARD"
+        ]
+      },
+      "target": "tts/piper"
+    },
+    {
+      "id": "vits-mimic3-bn",
+      "kind": "tts",
+      "licence": "See archive; candidate only",
+      "class": "RESTRICTED",
+      "candidate_only": true,
+      "source": {
+        "type": "hf_snapshot",
+        "repo": "csukuangfj/vits-mimic3-bn-multi_low"
+      },
+      "target": "tts/vits-mimic3-bn-multi_low"
+    },
+    {
+      "id": "vits-coqui-bn-female",
+      "kind": "tts",
+      "licence": "See archive; candidate only",
+      "class": "RESTRICTED",
+      "candidate_only": true,
+      "source": {
+        "type": "hf_snapshot",
+        "repo": "csukuangfj/vits-coqui-bn-custom_female"
+      },
+      "target": "tts/vits-coqui-bn-custom_female"
+    },
+    {
+      "id": "silero-vad",
+      "kind": "vad",
+      "licence": "MIT",
+      "class": "FREE",
+      "source": {
+        "type": "file",
+        "url": "https://raw.githubusercontent.com/snakers4/silero-vad/v6.2/src/silero_vad/data/silero_vad.onnx",
+        "name": "silero_vad.onnx"
+      },
+      "target": "vad"
+    },
+    {
+      "id": "multilingual-e5-small",
+      "kind": "embedding",
+      "licence": "MIT",
+      "class": "FREE WITH HARDWARE",
+      "source": {
+        "type": "hf_files",
+        "repo": "Xenova/multilingual-e5-small",
+        "files": [
+          "onnx/model_quantized.onnx",
+          "tokenizer.json",
+          "tokenizer_config.json",
+          "special_tokens_map.json",
+          "config.json"
+        ]
+      },
+      "target": "embedding/multilingual-e5-small"
+    },
+    {
+      "id": "indicconformer-hi",
+      "kind": "stt",
+      "licence": "MIT (AI4Bharat IndicConformer, ONNX export by OpenVoiceOS)",
+      "class": "FREE WITH HARDWARE",
+      "source": {
+        "type": "hf_files",
+        "repo": "OpenVoiceOS/ai4bharat-indicconformer-hi-onnx",
+        "files": [
+          "model.int8.onnx",
+          "vocab.txt",
+          "config.json",
+          "README.md"
+        ]
+      },
+      "target": "stt/indicconformer-hi"
+    },
+    {
+      "id": "indicconformer-bn",
+      "kind": "stt",
+      "licence": "MIT (AI4Bharat IndicConformer, ONNX export by OpenVoiceOS)",
+      "class": "FREE WITH HARDWARE",
+      "source": {
+        "type": "hf_files",
+        "repo": "OpenVoiceOS/ai4bharat-indicconformer-bn-onnx",
+        "files": [
+          "model.int8.onnx",
+          "vocab.txt",
+          "config.json",
+          "README.md"
+        ]
+      },
+      "target": "stt/indicconformer-bn"
+    },
+    {
+      "id": "bangla-zipformer-offline",
+      "kind": "stt",
+      "licence": "CC BY-SA 4.0",
+      "class": "RESTRICTED",
+      "source": {
+        "type": "hf_files",
+        "repo": "SayedShaun/bangla-zipformer-onnx",
+        "files": [
+          "int8/encoder.onnx",
+          "int8/decoder.onnx",
+          "int8/joiner.onnx",
+          "tokens.txt",
+          "LICENSE",
+          "README.md"
+        ]
+      },
+      "target": "stt/bangla-zipformer"
+    },
+    {
+      "id": "piper-en-cori",
+      "kind": "tts",
+      "licence": "Voice data public domain (LibriVox), Piper model card",
+      "class": "FREE WITH HARDWARE",
+      "source": {
+        "type": "hf_files",
+        "repo": "rhasspy/piper-voices",
+        "files": [
+          "en/en_GB/cori/medium/en_GB-cori-medium.onnx",
+          "en/en_GB/cori/medium/en_GB-cori-medium.onnx.json",
+          "en/en_GB/cori/medium/MODEL_CARD"
+        ]
+      },
+      "target": "tts/piper"
+    },
+    {
+      "id": "piper-en-alba",
+      "kind": "tts",
+      "licence": "Voice data CC BY 4.0 (Edinburgh)",
+      "class": "FREE WITH HARDWARE",
+      "source": {
+        "type": "hf_files",
+        "repo": "rhasspy/piper-voices",
+        "files": [
+          "en/en_GB/alba/medium/en_GB-alba-medium.onnx",
+          "en/en_GB/alba/medium/en_GB-alba-medium.onnx.json",
+          "en/en_GB/alba/medium/MODEL_CARD"
+        ]
+      },
+      "target": "tts/piper"
+    },
+    {
+      "id": "piper-en-northern-male",
+      "kind": "tts",
+      "licence": "Voice data CC BY-SA 4.0 (OpenSLR 83)",
+      "class": "RESTRICTED",
+      "source": {
+        "type": "hf_files",
+        "repo": "rhasspy/piper-voices",
+        "files": [
+          "en/en_GB/northern_english_male/medium/en_GB-northern_english_male-medium.onnx",
+          "en/en_GB/northern_english_male/medium/en_GB-northern_english_male-medium.onnx.json",
+          "en/en_GB/northern_english_male/medium/MODEL_CARD"
+        ]
+      },
+      "target": "tts/piper"
+    },
+    {
+      "id": "zipformer-en-offline",
+      "kind": "stt",
+      "licence": "Apache-2.0",
+      "class": "FREE WITH HARDWARE",
+      "source": {
+        "type": "hf_files",
+        "repo": "csukuangfj/sherpa-onnx-zipformer-en-2023-06-26",
+        "files": [
+          "encoder-epoch-99-avg-1.int8.onnx",
+          "decoder-epoch-99-avg-1.int8.onnx",
+          "joiner-epoch-99-avg-1.int8.onnx",
+          "tokens.txt",
+          "README.md"
+        ]
+      },
+      "target": "stt/zipformer-en-offline"
+    },
+    {
+      "id": "zipformer-en-streaming-large",
+      "kind": "stt",
+      "licence": "Apache-2.0",
+      "class": "FREE WITH HARDWARE",
+      "source": {
+        "type": "hf_files",
+        "repo": "csukuangfj/sherpa-onnx-streaming-zipformer-en-2023-06-26",
+        "files": [
+          "encoder-epoch-99-avg-1-chunk-16-left-64.int8.onnx",
+          "decoder-epoch-99-avg-1-chunk-16-left-64.int8.onnx",
+          "joiner-epoch-99-avg-1-chunk-16-left-64.int8.onnx",
+          "tokens.txt",
+          "README.md"
+        ]
+      },
+      "target": "stt/zipformer-en-streaming-large"
+    },
+    {
+      "id": "hindi-streaming-ctc",
+      "kind": "stt",
+      "licence": "Apache-2.0 (Vengadanathan weights, int8 by mobilebytesensei)",
+      "class": "FREE WITH HARDWARE",
+      "source": {
+        "type": "hf_files",
+        "repo": "mobilebytesensei/betterflow-hindi-streaming-ctc",
+        "files": [
+          "encoder.int8.onnx",
+          "tokens.txt",
+          "README.md"
+        ]
+      },
+      "target": "stt/hindi-streaming-ctc"
+    }
+  ]
+}

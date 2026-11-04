@@ -1,0 +1,20 @@
+# Installed or generated
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+node_modules/
+frontend/dist/
+playwright-report/
+test-results/
+
+# Local data and secrets
+.env
+data/
+
+# Large files fetched by scripts/fetch_models.py and benchmarks/fetch_eval_audio.py
+models/*
+!models/manifests/
+benchmarks/data/
+benchmarks/results/tts_samples/

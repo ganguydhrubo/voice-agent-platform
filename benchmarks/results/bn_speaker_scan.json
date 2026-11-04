@@ -1,0 +1,102 @@
+{
+ "sentences": 7,
+ "judge": "bangla-zipformer",
+ "results": [
+  {
+   "speaker": 14,
+   "cer": 0.037,
+   "worst": 0.146,
+   "rtf": 0.136
+  },
+  {
+   "speaker": 1,
+   "cer": 0.047,
+   "worst": 0.229,
+   "rtf": 0.074
+  },
+  {
+   "speaker": 13,
+   "cer": 0.047,
+   "worst": 0.188,
+   "rtf": 0.081
+  },
+  {
+   "speaker": 9,
+   "cer": 0.049,
+   "worst": 0.229,
+   "rtf": 0.085
+  },
+  {
+   "speaker": 7,
+   "cer": 0.05,
+   "worst": 0.229,
+   "rtf": 0.098
+  },
+  {
+   "speaker": 6,
+   "cer": 0.054,
+   "worst": 0.229,
+   "rtf": 0.081
+  },
+  {
+   "speaker": 11,
+   "cer": 0.054,
+   "worst": 0.271,
+   "rtf": 0.096
+  },
+  {
+   "speaker": 5,
+   "cer": 0.056,
+   "worst": 0.208,
+   "rtf": 0.074
+  },
+  {
+   "speaker": 8,
+   "cer": 0.057,
+   "worst": 0.271,
+   "rtf": 0.087
+  },
+  {
+   "speaker": 12,
+   "cer": 0.058,
+   "worst": 0.146,
+   "rtf": 0.093
+  },
+  {
+   "speaker": 4,
+   "cer": 0.065,
+   "worst": 0.25,
+   "rtf": 0.085
+  },
+  {
+   "speaker": 0,
+   "cer": 0.066,
+   "worst": 0.292,
+   "rtf": 0.109
+  },
+  {
+   "speaker": 2,
+   "cer": 0.066,
+   "worst": 0.312,
+   "rtf": 0.083
+  },
+  {
+   "speaker": 3,
+   "cer": 0.067,
+   "worst": 0.271,
+   "rtf": 0.079
+  },
+  {
+   "speaker": 10,
+   "cer": 0.074,
+   "worst": 0.292,
+   "rtf": 0.088
+  },
+  {
+   "speaker": 15,
+   "cer": 0.078,
+   "worst": 0.271,
+   "rtf": 0.094
+  }
+ ]
+}

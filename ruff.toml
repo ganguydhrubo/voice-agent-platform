@@ -1,0 +1,15 @@
+line-length = 140
+target-version = "py312"
+extend-exclude = ["models", "benchmarks/data", "frontend"]
+
+[lint]
+select = ["E", "F", "I", "B", "ASYNC"]
+# FastAPI's Depends() and File() defaults are meant to be calls.
+ignore = ["B008", "E501"]
+
+[lint.per-file-ignores]
+# Test and benchmark scripts run from the project folder and set the path first.
+"tests/**" = ["E402", "B905", "ASYNC109", "ASYNC220"]
+"benchmarks/**" = ["E402", "B905"]
+# The language model server is one long-lived child process, started once.
+"llm_engine/inference/llama_server.py" = ["ASYNC109", "ASYNC220"]

@@ -1,0 +1,26 @@
+# Shared by every agent. An industry file adds to these lists and overrides the rest.
+languages: [en, hi, bn]
+allowed_tools: [knowledge_search, escalate_to_human]
+memory:
+  keep_turns: 4
+  store_transcripts: true
+strict_numbers: true
+min_confidence: 0.62
+no_answer:
+  en: "I do not have that information. I can connect you with a member of our team."
+  hi: "यह जानकारी मेरे पास नहीं है। हमारी टीम का कोई सदस्य आपकी मदद कर सकता है।"
+  bn: "আমার কাছে এই তথ্য নেই। আমি আপনাকে আমাদের দলের একজন সদস্যের সঙ্গে যুক্ত করতে পারি।"
+business_policies:
+  - "Never ask for passwords, card numbers or one-time codes."
+  - "Say you are an AI assistant if asked."
+escalation_rules:
+  - id: talk-to-human
+    severity: human
+    phrases:
+      en: ["speak to a person", "talk to a person", "talk to a human", "speak to a human", "human agent", "real person", "speak to someone", "talk to someone", "customer care", "talk to an agent", "speak to an agent"]
+      hi: ["इंसान से बात", "किसी व्यक्ति से बात", "एजेंट से बात", "कर्मचारी से बात", "किसी से बात करा"]
+      bn: ["মানুষের সঙ্গে কথা", "কারও সঙ্গে কথা", "প্রতিনিধির সঙ্গে কথা", "কর্মীর সঙ্গে কথা"]
+    response:
+      en: "Of course. I have asked a member of our team to call you back."
+      hi: "ज़रूर। मैंने हमारी टीम के एक सदस्य से आपको वापस कॉल करने के लिए कहा है।"
+      bn: "অবশ্যই। আমি আমাদের দলের একজন সদস্যকে আপনাকে ফোন করতে বলেছি।"

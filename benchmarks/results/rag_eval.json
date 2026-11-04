@@ -1,0 +1,350 @@
+[
+ {
+  "kind": "answerable",
+  "language": "en",
+  "question": "What are the visiting hours?",
+  "confidence": 1.0,
+  "cosine": 0.861,
+  "coverage": 1.0,
+  "top1": true,
+  "top3": true
+ },
+ {
+  "kind": "answerable",
+  "language": "en",
+  "question": "Where is the pharmacy?",
+  "confidence": 1.0,
+  "cosine": 0.827,
+  "coverage": 1.0,
+  "top1": true,
+  "top3": true
+ },
+ {
+  "kind": "answerable",
+  "language": "en",
+  "question": "What are the OPD timings?",
+  "confidence": 0.84,
+  "cosine": 0.819,
+  "coverage": 0.5,
+  "top1": true,
+  "top3": true
+ },
+ {
+  "kind": "answerable",
+  "language": "en",
+  "question": "How do I book an appointment?",
+  "confidence": 1.0,
+  "cosine": 0.928,
+  "coverage": 1.0,
+  "top1": true,
+  "top3": true
+ },
+ {
+  "kind": "answerable",
+  "language": "en",
+  "question": "Is the outpatient department open on Sunday?",
+  "confidence": 1.0,
+  "cosine": 0.904,
+  "coverage": 1.0,
+  "top1": true,
+  "top3": true
+ },
+ {
+  "kind": "answerable",
+  "language": "en",
+  "question": "Do you take credit cards?",
+  "confidence": 1.0,
+  "cosine": 0.818,
+  "coverage": 1.0,
+  "top1": true,
+  "top3": true
+ },
+ {
+  "kind": "answerable",
+  "language": "en",
+  "question": "Is there parking?",
+  "confidence": 1.0,
+  "cosine": 0.844,
+  "coverage": 1.0,
+  "top1": true,
+  "top3": true
+ },
+ {
+  "kind": "answerable",
+  "language": "en",
+  "question": "Can I get a wheelchair?",
+  "confidence": 1.0,
+  "cosine": 0.839,
+  "coverage": 1.0,
+  "top1": true,
+  "top3": true
+ },
+ {
+  "kind": "answerable",
+  "language": "en",
+  "question": "Where is the emergency entrance?",
+  "confidence": 1.0,
+  "cosine": 0.837,
+  "coverage": 1.0,
+  "top1": true,
+  "top3": true
+ },
+ {
+  "kind": "answerable",
+  "language": "en",
+  "question": "What departments do you have?",
+  "confidence": 1.0,
+  "cosine": 0.803,
+  "coverage": 1.0,
+  "top1": true,
+  "top3": true
+ },
+ {
+  "kind": "answerable",
+  "language": "hi",
+  "question": "मरीज़ों से मिलने का समय क्या है?",
+  "confidence": 1.0,
+  "cosine": 0.904,
+  "coverage": 1.0,
+  "top1": true,
+  "top3": true
+ },
+ {
+  "kind": "answerable",
+  "language": "hi",
+  "question": "फार्मेसी कहाँ है?",
+  "confidence": 1.0,
+  "cosine": 0.834,
+  "coverage": 1.0,
+  "top1": true,
+  "top3": true
+ },
+ {
+  "kind": "answerable",
+  "language": "hi",
+  "question": "ओपीडी कब खुलती है?",
+  "confidence": 0.916,
+  "cosine": 0.921,
+  "coverage": 0.5,
+  "top1": true,
+  "top3": true
+ },
+ {
+  "kind": "answerable",
+  "language": "hi",
+  "question": "अपॉइंटमेंट कैसे लें?",
+  "confidence": 1.0,
+  "cosine": 0.902,
+  "coverage": 1.0,
+  "top1": true,
+  "top3": true
+ },
+ {
+  "kind": "answerable",
+  "language": "hi",
+  "question": "क्या पार्किंग है?",
+  "confidence": 1.0,
+  "cosine": 0.84,
+  "coverage": 1.0,
+  "top1": true,
+  "top3": true
+ },
+ {
+  "kind": "answerable",
+  "language": "hi",
+  "question": "बिल कहाँ भरें?",
+  "confidence": 0.853,
+  "cosine": 0.837,
+  "coverage": 0.5,
+  "top1": true,
+  "top3": true
+ },
+ {
+  "kind": "answerable",
+  "language": "bn",
+  "question": "রোগী দেখার সময় কখন?",
+  "confidence": 1.0,
+  "cosine": 0.895,
+  "coverage": 1.0,
+  "top1": true,
+  "top3": true
+ },
+ {
+  "kind": "answerable",
+  "language": "bn",
+  "question": "ফার্মেসি কোথায়?",
+  "confidence": 1.0,
+  "cosine": 0.843,
+  "coverage": 1.0,
+  "top1": true,
+  "top3": true
+ },
+ {
+  "kind": "answerable",
+  "language": "bn",
+  "question": "আউটডোর কখন খোলা থাকে?",
+  "confidence": 1.0,
+  "cosine": 0.899,
+  "coverage": 1.0,
+  "top1": true,
+  "top3": true
+ },
+ {
+  "kind": "answerable",
+  "language": "bn",
+  "question": "অ্যাপয়েন্টমেন্ট কীভাবে নেব?",
+  "confidence": 0.887,
+  "cosine": 0.883,
+  "coverage": 0.5,
+  "top1": true,
+  "top3": true
+ },
+ {
+  "kind": "answerable",
+  "language": "bn",
+  "question": "পার্কিং আছে কি?",
+  "confidence": 1.0,
+  "cosine": 0.808,
+  "coverage": 1.0,
+  "top1": true,
+  "top3": true
+ },
+ {
+  "kind": "answerable",
+  "language": "bn",
+  "question": "বিলিং কাউন্টার কোথায়?",
+  "confidence": 1.0,
+  "cosine": 0.843,
+  "coverage": 1.0,
+  "top1": true,
+  "top3": true
+ },
+ {
+  "kind": "unanswerable",
+  "language": "en",
+  "question": "What is the price of a flight to Paris?",
+  "confidence": 0.569,
+  "cosine": 0.758,
+  "coverage": 0.0
+ },
+ {
+  "kind": "unanswerable",
+  "language": "en",
+  "question": "Who is the Prime Minister of Australia?",
+  "confidence": 0.535,
+  "cosine": 0.714,
+  "coverage": 0.0
+ },
+ {
+  "kind": "unanswerable",
+  "language": "en",
+  "question": "How do I bake a chocolate cake?",
+  "confidence": 0.575,
+  "cosine": 0.766,
+  "coverage": 0.0
+ },
+ {
+  "kind": "unanswerable",
+  "language": "en",
+  "question": "What is the capital of Japan?",
+  "confidence": 0.56,
+  "cosine": 0.746,
+  "coverage": 0.0
+ },
+ {
+  "kind": "unanswerable",
+  "language": "en",
+  "question": "Do you sell car insurance?",
+  "confidence": 0.891,
+  "cosine": 0.789,
+  "coverage": 0.667
+ },
+ {
+  "kind": "unanswerable",
+  "language": "en",
+  "question": "What is the weather tomorrow?",
+  "confidence": 0.602,
+  "cosine": 0.802,
+  "coverage": 0.0
+ },
+ {
+  "kind": "unanswerable",
+  "language": "en",
+  "question": "Who won the cricket match last night?",
+  "confidence": 0.545,
+  "cosine": 0.726,
+  "coverage": 0.0
+ },
+ {
+  "kind": "unanswerable",
+  "language": "en",
+  "question": "Can you write a poem about the sea?",
+  "confidence": 0.56,
+  "cosine": 0.747,
+  "coverage": 0.0
+ },
+ {
+  "kind": "unanswerable",
+  "language": "hi",
+  "question": "पेरिस की फ्लाइट कितने की है?",
+  "confidence": 0.569,
+  "cosine": 0.759,
+  "coverage": 0.0
+ },
+ {
+  "kind": "unanswerable",
+  "language": "hi",
+  "question": "जापान की राजधानी क्या है?",
+  "confidence": 0.562,
+  "cosine": 0.749,
+  "coverage": 0.0
+ },
+ {
+  "kind": "unanswerable",
+  "language": "hi",
+  "question": "कल मौसम कैसा रहेगा?",
+  "confidence": 0.694,
+  "cosine": 0.776,
+  "coverage": 0.25
+ },
+ {
+  "kind": "unanswerable",
+  "language": "hi",
+  "question": "केक कैसे बनाते हैं?",
+  "confidence": 0.568,
+  "cosine": 0.757,
+  "coverage": 0.0
+ },
+ {
+  "kind": "unanswerable",
+  "language": "bn",
+  "question": "প্যারিসের বিমানের ভাড়া কত?",
+  "confidence": 0.56,
+  "cosine": 0.746,
+  "coverage": 0.0
+ },
+ {
+  "kind": "unanswerable",
+  "language": "bn",
+  "question": "জাপানের রাজধানী কী?",
+  "confidence": 0.551,
+  "cosine": 0.735,
+  "coverage": 0.0
+ },
+ {
+  "kind": "unanswerable",
+  "language": "bn",
+  "question": "আগামীকাল আবহাওয়া কেমন থাকবে?",
+  "confidence": 0.615,
+  "cosine": 0.819,
+  "coverage": 0.0
+ },
+ {
+  "kind": "unanswerable",
+  "language": "bn",
+  "question": "কেক কীভাবে বানায়?",
+  "confidence": 0.598,
+  "cosine": 0.797,
+  "coverage": 0.0
+ }
+]

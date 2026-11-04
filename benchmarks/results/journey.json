@@ -1,0 +1,106 @@
+[
+ {
+  "language": "hi",
+  "states": [
+   [
+    0.1,
+    "Ready"
+   ],
+   [
+    0.2,
+    "Speaking"
+   ],
+   [
+    8.1,
+    "Listening"
+   ],
+   [
+    11.4,
+    "Thinking"
+   ],
+   [
+    13.2,
+    "Speaking"
+   ],
+   [
+    15.8,
+    "Listening"
+   ],
+   [
+    22.2,
+    "Thinking"
+   ],
+   [
+    24.3,
+    "Speaking"
+   ],
+   [
+    29.4,
+    "Listening"
+   ],
+   [
+    33.1,
+    "Thinking"
+   ],
+   [
+    35.3,
+    "Speaking"
+   ],
+   [
+    36.7,
+    "Listening"
+   ],
+   [
+    38.1,
+    "Thinking"
+   ],
+   [
+    39.8,
+    "Speaking"
+   ],
+   [
+    42.7,
+    "Listening"
+   ]
+  ],
+  "bubbles": [
+   {
+    "role": "agent",
+    "text": "नमस्ते, मैं आशा हूँ, सैंपल सिटी हॉस्पिटल की एआई सहायक। बताइए, आज क्या मदद चाहिए?"
+   },
+   {
+    "role": "user",
+    "text": "फ़ारमेसी कहाँ है"
+   },
+   {
+    "role": "agent",
+    "text": "फ़ारमेसी मुख्य द्वार के पास स्थित है।\nSource: 02_hospital_guide_hi.md, विभाग और सेवाएँ"
+   },
+   {
+    "role": "user",
+    "text": "वह कितने बजे खुलती है"
+   },
+   {
+    "role": "agent",
+    "text": "फ़ारमेसी मुख्य द्वार के पास स्थित है और 24 घंटे खुली रहती है।\nSource: 02_hospital_guide_hi.md, विभाग और सेवाएँ"
+   },
+   {
+    "role": "user",
+    "text": "ओपीडी का समय क्या है"
+   },
+   {
+    "role": "agent",
+    "text": "ओपीडी सुबह 9 बजे से शाम 5 बजे तक खुली रहती है।\nInterrupted\nSource: 02_hospital_guide_hi.md, ओपीडी का समय"
+   },
+   {
+    "role": "user",
+    "text": "फारमेसी कहाँ है"
+   },
+   {
+    "role": "agent",
+    "text": "फ़ारमेसी मुख्य द्वार के पास स्थित है।\nSource: 02_hospital_guide_hi.md, विभाग और सेवाएँ"
+   }
+  ],
+  "problems": []
+ }
+]
