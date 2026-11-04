@@ -6,7 +6,7 @@ Research date: November 2026. This records what was looked at and why each piece
 
 Can one web page give a natural voice conversation in English, Hindi and Bengali, with no phone line, no paid service and no data leaving the server, on ordinary hardware?
 
-Yes, with limits. A 10-core laptop with 16 GB of memory gave a first spoken reply in about 1.9 seconds for one caller. The limits are in section 6.
+Yes, with limits. A 10-core laptop with 16 GB of memory gave a first spoken reply in about 1.9 to 2.3 seconds for one caller. The limits are in section 6.
 
 ## 1. Speech to text
 

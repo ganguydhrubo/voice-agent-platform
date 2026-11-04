@@ -26,22 +26,13 @@ After a change to agent files or sample knowledge, delete `data/` to seed again.
 
 ## B. Public link from your own computer, for free
 
-The microphone needs HTTPS. A Cloudflare quick tunnel gives HTTPS without an account.
-
-1. Download cloudflared from https://github.com/cloudflare/cloudflared/releases into `models/runtime/`.
-2. Start the tunnel, and read the `trycloudflare.com` address it prints:
+The microphone needs HTTPS. A Cloudflare quick tunnel gives HTTPS without an account. First put `cloudflared.exe` from https://github.com/cloudflare/cloudflared/releases into `models/runtime/`, then run one command:
 
 ```bash
-models/runtime/cloudflared.exe tunnel --url http://localhost:8000
+.venv/Scripts/python scripts/go_live.py
 ```
 
-3. Put these in `.env` and start the server:
-
-```
-VAP_ENVIRONMENT=production
-VAP_TRUST_PROXY=true
-VAP_PUBLIC_ORIGIN=https://the-address-it-printed.trycloudflare.com
-```
+It opens the tunnel, starts the agent in production mode with the right address, and prints the link. Keep the window open. Press Ctrl+C to stop.
 
 | Limit | Detail |
 | --- | --- |

@@ -21,8 +21,8 @@ English, Hindi and Bengali. 16 industry agents. Healthcare is the full reference
 
 | Measure | Result |
 | --- | --- |
-| First spoken reply, typical (p50) | About 2 seconds, after 0.45 seconds of silence |
-| First spoken reply, slow (p95) | 2.8 to 3.3 seconds |
+| First spoken reply, typical (p50) | 1.9 to 2.3 seconds across three runs, after 0.45 seconds of silence |
+| First spoken reply, slow (p95) | 2.8 to 3.6 seconds |
 | Callers at one time | 2 |
 | Word errors on human speech | English 12.5%, Hindi 10.1%, Bengali 3.1% (may be too good, see below) |
 | Evaluation tests, 16 agents | 55 of 55 |
@@ -36,9 +36,10 @@ Please read this part.
 2. **No real microphone or real room.** Tests used recordings played through a fake microphone device.
 3. **Bengali score may be too good.** The recogniser may have trained on some test clips. Its publisher reports 14.4% word errors.
 4. **Docker images were not built.** Docker would not start on the test laptop.
-5. **Sample facts are invented.** Every organisation is marked Sample. Replace them with your own.
-6. **Not certified.** It is not cleared for real patient, bank or legal data.
-7. **More than a few callers is calculated, not measured.** See [cost and capacity](docs/12_COST_ANALYSIS.md).
+5. **The public link has not been tried end to end.** Production mode was tested locally, but a call through the tunnel has not been made.
+6. **Sample facts are invented.** Every organisation is marked Sample. Replace them with your own.
+7. **Not certified.** It is not cleared for real patient, bank or legal data.
+8. **More than a few callers is calculated, not measured.** See [cost and capacity](docs/12_COST_ANALYSIS.md).
 
 ## Quick start
 
@@ -60,7 +61,7 @@ Set your own owner Email ID and password in `.env`, then start:
 
 Open http://localhost:8000.
 
-Full steps, including a free public link: [deployment guide](docs/11_DEPLOYMENT.md).
+For a free public HTTPS link from this computer, run `.venv/Scripts/python scripts/go_live.py`. Full steps: [deployment guide](docs/11_DEPLOYMENT.md).
 
 ## Documents
 

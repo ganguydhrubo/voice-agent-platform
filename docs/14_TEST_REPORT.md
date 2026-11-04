@@ -39,7 +39,8 @@ Run on 4 November 2026 on the final code, on the laptop described in `13_PERFORM
 | Network failure | `test_a_dropped_connection_can_resume_without_a_second_greeting` | Clean drop only. No slow or lossy network test |
 | Callers at one time | 2 callers, 16 turns; third refused | Two callers only |
 | Running out of resources | Admission tests, hardware plan tests | Memory pressure was not forced on purpose |
-| Public link | Real test over the tunnel: see below | |
+| Production mode | Browser journey in Hindi on the server in production mode; HSTS on, `/api/docs` hidden, `/metrics` refused through a proxy header | Local, over plain HTTP |
+| Public link | **Not run.** Opening a tunnel needs the owner's approval, so `scripts/go_live.py` has never run end to end | WebSocket through the tunnel is unproved |
 | Docker image build | **Not run** | Docker Desktop would not start |
 
 ## Real bugs these tests caught

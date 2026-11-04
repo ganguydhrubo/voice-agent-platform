@@ -20,7 +20,7 @@ On the test laptop, 10 cores and 16 threads, one LLM slot.
 
 | Callers talking at one time | First audio p50 | First audio p95 | Note |
 | --- | --- | --- | --- |
-| 1 | 2,139 ms | 3,326 ms | 60 turns, with little free memory |
+| 1 | 1,896 to 2,334 ms | 2,758 to 3,605 ms | Three runs of 60 turns. See `13_PERFORMANCE.md` |
 | 2 | 2,875 ms | 3,563 ms | 16 turns, each caller keeps talking with no pause. Harder than a real call |
 | 3 | Refused | | Politely, with "All our lines are busy." |
 

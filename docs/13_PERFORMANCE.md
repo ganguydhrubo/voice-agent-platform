@@ -6,13 +6,14 @@ All numbers were measured on 4 November 2026 on one laptop: Lenovo 83K1, i7-1362
 
 Time from the `speech_end` event to the first audio frame leaving for the browser, over a real WebSocket, with the Healthcare agent and machine-voice questions.
 
-| Run | Turns | Free memory | p50 | p95 | p99 | Max |
+| Run | Turns | Conditions | p50 | p95 | p99 | Max |
 | --- | --- | --- | --- | --- | --- | --- |
-| Final code, one caller | 60 | About 0.6 GB | 2,139 ms | 3,326 ms | 3,688 ms | 3,899 ms |
-| Earlier code, one caller | 60 | About 2 to 3 GB | 1,896 ms | 2,758 ms | 2,880 ms | 2,925 ms |
-| Final code, two callers talking at once | 16 | About 1 GB | 2,875 ms | 3,563 ms | 4,169 ms | 4,320 ms |
+| Earlier code, one caller | 60 | 2 to 3 GB free | 1,896 ms | 2,758 ms | 2,880 ms | 2,925 ms |
+| Final code, one caller | 60 | About 0.6 GB free | 2,139 ms | 3,326 ms | 3,688 ms | 3,899 ms |
+| Final code, production mode, one caller | 60 | 2 to 4 GB free, a disk scan running for part of it | 2,334 ms | 3,605 ms | 4,064 ms | 4,113 ms |
+| Final code, two callers talking at once | 16 | About 1 GB free | 2,875 ms | 3,563 ms | 4,169 ms | 4,320 ms |
 
-The final run had other apps holding most of the memory. That probably explains most of the gap, but it was not tested on its own, so read 1.9 to 2.1 seconds as the honest typical figure.
+The spread comes from what else the laptop was doing. The third run had more free memory than the second and was still slower, so free memory alone does not explain it. Read **about 1.9 to 2.3 seconds as typical and 2.8 to 3.6 seconds as slow**. A quiet machine should do better, but that was not measured.
 
 **Add these when reading the numbers:**
 
@@ -21,7 +22,7 @@ The final run had other apps holding most of the memory. That probably explains 
 3. With 20 turns per language, p99 is close to the maximum. It is not a true 99th percentile.
 4. Two-caller test: each caller keeps talking without a pause, which is harder than a real call.
 
-## By language, final code, one caller
+## By language, final code, one caller, second run
 
 | Language | First audio p50 | p95 | p99 | Turns |
 | --- | --- | --- | --- | --- |
@@ -29,7 +30,7 @@ The final run had other apps holding most of the memory. That probably explains 
 | Hindi | 2,483 ms | 2,768 ms | 2,809 ms | 20 |
 | Bengali | 2,461 ms | 3,559 ms | 3,831 ms | 20 |
 
-## By stage, final code, one caller
+## By stage, final code, one caller, second run
 
 | Stage | English p50 / p95 | Hindi p50 / p95 | Bengali p50 / p95 |
 | --- | --- | --- | --- |
