@@ -61,7 +61,7 @@ Set your own owner Email ID and password in `.env`, then start:
 
 Open http://localhost:8000.
 
-For a free public HTTPS link from this computer, run `.venv/Scripts/python scripts/go_live.py`. Full steps: [deployment guide](docs/11_DEPLOYMENT.md).
+For a free public HTTPS link from this computer, double-click `go_live.bat` on Windows, or run `.venv/Scripts/python scripts/go_live.py`. Full steps: [deployment guide](docs/11_DEPLOYMENT.md).
 
 ## Documents
 

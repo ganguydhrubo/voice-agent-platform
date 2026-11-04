@@ -32,7 +32,7 @@ The microphone needs HTTPS. A Cloudflare quick tunnel gives HTTPS without an acc
 .venv/Scripts/python scripts/go_live.py
 ```
 
-It opens the tunnel, starts the agent in production mode with the right address, and prints the link. Keep the window open. Press Ctrl+C to stop.
+On Windows you can double-click `go_live.bat` instead. It opens the tunnel, starts the agent in production mode with the right address, and prints the link. Keep the window open. Press Ctrl+C to stop.
 
 | Limit | Detail |
 | --- | --- |
